@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import styles from '../styles';
 import { fadeIn } from '../utils/motion';
 
-const ExploreCard = ({ id, imgUrl, title, index, active, handleClick,href }) => (
+const ExploreCard = ({ id, imgUrl, title, index, active, handleClick, href }) => (
   <motion.div
     variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
     className={`relative ${
@@ -28,11 +28,11 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick,href }) => 
           className={`${styles.flexCenter} w-[60px] h-[60px] rounded-[24px] glassmorphism mb-[16px]`}
         >
           <a href={href}>
-          <img
-            src="/headset.svg"
-            alt="headset"
-            className="w-[25px] h-1/2 object-contain"
-          />
+            <img
+              src="/headset.svg"
+              alt="headset"
+              className="w-[25px] h-1/2 object-contain"
+            />
           </a>
         </div>
         <p className="font-normal text-[16px] leading-[20.16px] text-white uppercase">
